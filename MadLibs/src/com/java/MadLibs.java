@@ -191,32 +191,6 @@ public class MadLibs {
 			System.out.println(even + " " + odd);
 		}
 	}
-
-	public void ExtractCharacters() {
-		/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-		Scanner scan = new Scanner(System.in);
-		int numberOfInput = scan.nextInt();
-
-		for(int i = 0; i < numberOfInput; i++){
-
-			String even;
-			String odd;
-			even = odd = "";
-
-			String stringInput = scan.next();
-			char[] charArray = stringInput.toCharArray();
-			for(int j = 0; j < charArray.length; j += 2){
-				even += charArray[j];
-			}
-
-			for (int k = 1; k < charArray.length; k += 2){
-				odd += charArray[k];
-			}
-			System.out.println(even + " " + odd);
-		}
-		// here scan dot close would break the program
-	}
-
 	public static void main(String[] args) {
 	// write your code here
 		/*MadLibs game = new MadLibs();
@@ -224,7 +198,8 @@ public class MadLibs {
 		game.play();*/
 
 		MadLibs game = new MadLibs();
-		game.ExtractCharacters();
-//		game.printOddAndEvenLettersInAString();
+		game.printOddAndEvenLettersInAString();
+
+		// sonar ling disabled for git yay
 	}
 }

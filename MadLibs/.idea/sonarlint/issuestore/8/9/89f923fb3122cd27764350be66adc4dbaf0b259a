@@ -1,4 +1,32 @@
 
-fsquid:HiddenFieldCheck~"8Rename "story" which hides the field declared at line 9.(ª‚‚ˆùÿÿÿÿ8Œñİ×ì-
+isquid:CommentedOutCodeLineŞ"<This block of commented-out lines of code should be removed.(Ôøçj8¿øßãì-
+=squid:S2676\"Use the original value instead.(‡şÆÜ8²”±àì-
+\
+squid:S106×"9Replace this use of System.out or System.err by a logger.(éš•Ëÿÿÿÿÿ8¼ôÛãì-
 [
-squid:S106`"9Replace this use of System.out or System.err by a logger.(ÀÙáûùÿÿÿÿ8§ÂÊ×ì-
+squid:S106w"9Replace this use of System.out or System.err by a logger.(–ı³Üÿÿÿÿÿ8âËûßì-
+[
+squid:S106|"9Replace this use of System.out or System.err by a logger.(å—Ö‚şÿÿÿÿ8¯íşßì-
+\
+squid:S106¿"9Replace this use of System.out or System.err by a logger.(éš•Ëÿÿÿÿÿ8±…°ãì-
+;squid:S1643Õ"Use a StringBuilder instead.(ÔÎ¢¢8¼ôÛãì-
+@squid:S1643½"Use a StringBuilder instead.(¼´Ãıÿÿÿÿ8±…°ãì-
+ssquid:S00100Ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÌ²¿ùÿÿÿÿ8ÅÍİãì-
+\
+squid:S106†"9Replace this use of System.out or System.err by a logger.(ª¬èíûÿÿÿÿ8Àé€àì-
+\
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(¢Šƒóûÿÿÿÿ8‰öàì-
+jsquid:CommentedOutCodeLineä"<This block of commented-out lines of code should be removed.(şÔøÇ8İÚñãì-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(õûšÖÿÿÿÿÿ8€àì-
+\
+squid:S106­"9Replace this use of System.out or System.err by a logger.(ñ¸êûÿÿÿÿ8²ÕŸáì-
+@squid:S1643º"Use a StringBuilder instead.(¿èé×ÿÿÿÿÿ8±…°ãì-
+>squid:S2676"Use the original value instead.(À³ôÂ8æ¾Ìàì-
+@squid:S1643Ñ"Use a StringBuilder instead.(˜óÎÿşÿÿÿÿ8¼ôÛãì-
+[
+squid:S106i"9Replace this use of System.out or System.err by a logger.(ï’ìŞıÿÿÿÿ8§ÂÊ×ì-
+gsquid:HiddenFieldCheck"8Rename "story" which hides the field declared at line 9.(ç÷°«üÿÿÿÿ8æ¾Ìàì-
+V
+squid:S106r"9Replace this use of System.out or System.err by a logger.(«ÜšÓ8Áúóßì-
+Esquid:S1659µ"!Declare "odd" on a separate line.(ğ©¦Öûÿÿÿÿ8±…°ãì-
