@@ -60,5 +60,11 @@ public class ArrayPractice {
         for(String s : shoppingList){
             System.out.println(s);
         }
+
+        // printing reverse arrays
+        for(int i = shoppingList.length -1; i > -1; i--){
+            System.out.print(shoppingList[i]);
+        }
+
 	}
 }
