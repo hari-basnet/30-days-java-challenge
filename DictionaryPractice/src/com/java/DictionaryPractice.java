@@ -2,6 +2,7 @@ package com.java;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class DictionaryPractice {
 
@@ -54,14 +55,39 @@ public class DictionaryPractice {
         // remove some items or all
         shoppingList.remove("Eggs");
 
-
         // Replace values for a certain key
         shoppingList.replace("Bread", Boolean.FALSE);
         System.out.println(shoppingList.toString());
+        System.out.println("testing------" + shoppingList.toString());
 
         //
         shoppingList.clear();
         System.out.println();
+
+
+        // creating a telephone map and storing values and finding key and values
+        System.out.println("#############");
+        System.out.println("please enter the number of contacts you want to put and their details\n");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        Map<String, Integer> telephone = new HashMap<String, Integer>();
+        for(int i = 0; i < n; i++){
+            String name = in.next();
+            int phone = in.nextInt();
+            // Write code here
+            telephone.put(name, phone);
+
+        }
+        while(in.hasNext()){
+            String s = in.next();
+            // Write code here
+            if(telephone.get(s) == null){
+                System.out.println("Not found");
+            }else{
+                System.out.println(s + "=" + telephone.get(s));
+            }
+        }
+        in.close();
 
 
     }
