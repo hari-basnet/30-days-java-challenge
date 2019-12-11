@@ -20,9 +20,9 @@ public class BinaryChallenge {
                 if(tempCount > count){
                     count = tempCount;
                 }
-                else{
-                    tempCount = 0;
-                }
+
+            }else{
+                tempCount = 0;
             }
 
         }
@@ -64,8 +64,8 @@ public class BinaryChallenge {
 
         scanner.close();
 
-//        binaryCalculator(n);
-        System.out.println(longestConsecutiveOneBitSequence(n));
+        binaryCalculator(n);
+//        System.out.println(longestConsecutiveOneBitSequence(n));
     }
 }
 
