@@ -76,11 +76,12 @@ public class LibraryCatalogue {
         int daysLate = currentDay - (book.getDayCheckedOut() + getLengthOfCheckoutPeriod());
         if(daysLate > 0){
             System.out.println("You owe the library $" + (getInitialLateFee() + daysLate * getFeePerLateDay()) +
-                " because your book is "+ daysLate + "days overdue.");
+                " because your book is "+ daysLate + " days overdue.");
         }else{
             System.out.println("Books Returned. Thank you");
         }
-
+        book.setIsCheckedOut(false, currentDay);
+        currentDay = 0;
     }
 
     public void sorryBookAlreadyCheckedOut(Book book){
