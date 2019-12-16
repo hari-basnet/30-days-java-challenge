@@ -2,18 +2,38 @@ package com.java;
 
 public class Animal {
 
-    public int age;
+	private int age;             // VS private int age
 
-    public Animal(int age){
-        this.age = age;
-        System.out.println("An animal has been created");
-    }
+	public Animal(int age){
+		this.age = age;
+		System.out.println("An animal has been created");
+	}
 
-    public void eat(){
+	public void eat(){
+		System.out.println("An animal is eating");
+	}
+	
+	// Getter
+	public int getAge(){
+		return age;
+	}
+	public static void main(String[] args) {
+		// write your code here
+		Animal a = new Animal(5);
+		Dog d = new Dog();
+		Cat c = new Cat();
+		d.ruff();
+		c.meow();
+		System.out.println(c.getAge());
 
-    }
-    public static void main(String[] args) {
-        // write your code here
-
-    }
+		a.eat();
+		d.eat();
+		c.eat();
+		c.prance();
+		d.run();
+		
+		// what happens if
+		// Animal o = new Dog();
+		
+	}
 }
