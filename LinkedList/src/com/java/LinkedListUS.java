@@ -44,35 +44,33 @@ public class LinkedListUS {
 	}
 	
 	// size
-    public int size(){
+	public int size() {
 		return count;
 	}
 	
 	// isEmpty
-    public boolean isEmpty(){
+	public boolean isEmpty() {
 		return head == null;
 	}
 	
 	// remove
-	public void remove(){
-	    // remove from the back of the list
-        Node current = head;
-        
-        while(current.getNext().getNext() != null){
-            current = current.getNext();
-        }
-        current.setNext(null);
-        count--;
-    }
+	public void remove() {
+		// remove from the back of the list
+		Node current = head;
+		
+		while (current.getNext().getNext() != null) {
+			current = current.getNext();
+		}
+		current.setNext(null);
+		count--;
+	}
 	
 
 	public static void main(String[] args) {
-	// write your code here
-	
-//        LinkedList<String> linkedList = new LinkedList();
-//		linkedList.add("Alice");
-		LinkedListUS linkedList = new LinkedListUS();
+		// write your code here
 		
+		LinkedList<String> linkedList = new LinkedList();
+		linkedList.add("Alice");
 		
 		System.out.println(linkedList);
 	}
