@@ -1,6 +1,6 @@
 package com.java;
 
-public class Animal {
+public abstract class Animal {
 
 	private int age;             // VS private int age
 
@@ -9,31 +9,44 @@ public class Animal {
 		System.out.println("An animal has been created");
 	}
 
-	public void eat(){
-		System.out.println("An animal is eating");
-	}
+	public abstract void eat();
 	
+	public void sleep(){
+		System.out.println("An animal is sleeping");
+	}
 	// Getter
 	public int getAge(){
 		return age;
 	}
 	public static void main(String[] args) {
 		// write your code here
-		Animal a = new Animal(5);
 		Dog d = new Dog();
 		Cat c = new Cat();
-		d.ruff();
-		c.meow();
-		System.out.println(c.getAge());
-
-		a.eat();
+		
 		d.eat();
 		c.eat();
-		c.prance();
-		d.run();
 		
+		d.sleep();
+		c.sleep();
 		// what happens if
 		// Animal o = new Dog();
+		
+		// Object casting
+		Object dog = new Dog();
+		Dog realDog = (Dog) dog;
+		realDog.sleep();
+		
+		Object str = "est";
+		String realString = (String) str;
+		realString.getBytes();
+		
+		// what happens when ???
+		Dog doggy = new Dog();
+		if(d instanceof Animal){
+			Animal animal = (Animal) doggy;
+			animal.sleep();
+		}
+		doggy.sleep();
 		
 	}
 }
