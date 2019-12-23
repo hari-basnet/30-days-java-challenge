@@ -15,5 +15,17 @@ public class Main {
         ll.insert(0,1);
     
         System.out.println(ll.find(1));
+        
+        ll.insert(0,0);
+        System.out.println(ll);
+        
+        ll.insert(1,5);
+        System.out.println(ll);
+        
+        ll.delete(2);
+        System.out.println(ll);
+        
+        ll.insert(1, 100);
+        System.out.println(ll);
     }
 }

@@ -40,6 +40,8 @@ public class LinkedList {
 			}
 			count++;
 		}
+		newNode.setNext(current.getNext());
+		current.setNext(newNode);
 	}
 	
 	public void delete(int pos){
