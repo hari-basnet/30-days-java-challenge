@@ -1,33 +1,33 @@
 package com.java;
 
-public class Node {
+import java.util.ArrayList;
+
+public class Node<T> {
 	
-	private int data;
-	private Node next;
+	private T data;
+	private ArrayList<Node> neighbors;
 	
-	public Node(int d, Node nx){
-		
-		this.data = d;
-		this.next = nx;
+	public Node(T d){
+		data = d;
+		neighbors = new ArrayList<Node>();
 	}
 	
 	// Getters
-	public int getData(){
+	public T getData(){
 		return data;
 	}
 	
-	public Node getNext(){
-		return next;
-		
-	}
-	
-	public void setData(int d ){
+	public void setData(T d ){
 		data = d;
 	}
 	
-	public void setNext(Node n){
-		next = n;
+	public Node[] getNeighbors(){
+		return neighbors.toArray(new Node[0]);
 	}
 	
-	
+	public void setNeighbors(Node[] d){
+		for(int i = 0; i < d.length; i++){
+			neighbors.add(d[i]);
+		}
+	}
 }

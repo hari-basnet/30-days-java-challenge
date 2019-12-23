@@ -1,31 +1,31 @@
 package com.java;
 
+import static com.java.Graph.DFS;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Node x = new Node(1, null);
-        Node y = new Node(2, x);
-        System.out.println(x.getData());
-        System.out.println(y.getNext().getData());
-        
-        
-        LinkedList ll = new LinkedList();
-        ll.insert(0,2);
-        ll.insert(0,1);
+        Node<String> x = new Node("Hello");
+        Node<String> y = new Node("world");
+        System.out.println(y.getData());
+        System.out.println(y.getData());
     
-        System.out.println(ll.find(1));
-        
-        ll.insert(0,0);
-        System.out.println(ll);
-        
-        ll.insert(1,5);
-        System.out.println(ll);
-        
-        ll.delete(2);
-        System.out.println(ll);
-        
-        ll.insert(1, 100);
-        System.out.println(ll);
+        Node<String> A = new Node<String>("A");
+        Node<String> B = new Node<String>("B");
+        Node<String> C = new Node<String>("C");
+        Node<String> D = new Node<String>("D");
+        Node<String> E = new Node<String>("E");
+        Node<String> F = new Node<String>("F");
+    
+        A.setNeighbors(new Node[] {B,C,D});
+        B.setNeighbors(new Node[] {A,F});
+        C.setNeighbors(new Node[] {A,D,E});
+        D.setNeighbors(new Node[] {A,C,F});
+        E.setNeighbors(new Node[] {C});
+        F.setNeighbors(new Node[] {B,D});
+    
+        DFS(B);
+        DFS(D);
     }
 }
