@@ -1,6 +1,13 @@
 # Default ignored files
 /workspace.xml
 
+# removing filepath in git 
+
+/target/
+/.classpath
+/*.project
+/.settings
+/*.springBeans
 
 # Compiled class file
 *.class
